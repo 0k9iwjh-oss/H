@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل واختبارات مهارات الكتابة الأكاديمية</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --border-color: #e2e8f0;
+        }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0 0 10px 0; font-size: 2rem; }
+        header p { margin: 0; font-size: 1.1rem; opacity: 0.9; }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+        .tab-btn {
+            background-color: white;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .tab-btn.active, .tab-btn:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        .section-content {
+            display: none;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .section-content.active { display: block; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--border-color); padding-bottom: 8px; margin-top: 0; }
+        h3 { color: #334155; margin-top: 1.5rem; }
+        ul { padding-right: 20px; }
+        li { margin-bottom: 8px; }
+        .en-term { direction: ltr; display: inline-block; background: #e2e8f0; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: bold; }
+        
+        .question-card {
+            background: #f1f5f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+        .options label {
+            display: block;
+            background: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .options label:hover { background: #e0f2fe; }
+        .options input { margin-left: 10px; }
+        .submit-btn {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 2rem;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover { background-color: #059669; }
+        .result-box {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+        .explanation {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-top: 8px;
+            padding-right: 10px;
+            border-right: 3px solid var(--primary);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>منصة مهارات الكتابة الأكاديمية</h1>
+        <p>دليل شامل للوحدات المطلوبة مع اختبار تفاعلي فوري</p>
+    </header>
+
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('study')">📖 الدليل والملخص الشامل</button>
+            <button class="tab-btn" onclick="switchTab('quiz')">📝 التدريبات والاختبارات التفاعلية</button>
+        </div>
+
+        <div id="study" class="section-content active">
+            <h2>ملخص المحتوى الأكاديمي الدقيق</h2>
+            
+            <h3>Unit 2: Narrative Paragraphs (فقرات السرد)</h3>
+            <ul>
+                <li>تعتمد على سرد القصص والأحداث بترتيبها الزمني باستخدام <span class="en-term">Time-Order Signals</span> (مثل: First, Then, After that, Finally).</li>
+                <li><span class="en-term">Compound Sentences (الجمل المركبة):</span> تتكون من جملتين بسيطتين مرتبطتين بـفاصلة وأداة ربط من أدوات <span class="en-term">FANBOYS</span> (وأبرزها: <span class="en-term">and, but, so, or</span>).</li>
+                <li>قاعدة الفاصلة: توضع الفاصلة قبل أداة الربط مباشرة في الجملة المركبة، ولا توضع إذا كانت الجملة بسيطة بفعلين أو فاعلين بدون فاصلة.</li>
+            </ul>
+
+            <h3>Unit 3: Basic Paragraph Structure (هيكل الفقرة الأساسية)</h3>
+            <ul>
+                <li>تشبه الفقرة شطيرة الساندويتش: مقدمة وخاتمة وما بينهما تفاصيل داعمة.</li>
+                <li><span class="en-term">Topic Sentence:</span> تتكون من عنصرين أساسيين: <span class="en-term">Topic</span> + <span class="en-term">Controlling Idea</span>. يجب أن لا تكون عامة جداً ولا تفصيلية جداً.</li>
+                <li><span class="en-term">Supporting Sentences:</span> تقدم نقاط رئيسية (<span class="en-term">Main Points</span>) وأمثلة وتفاصيل داعمة (<span class="en-term">For example, Such as</span>).</li>
+                <li><span class="en-term">Concluding Sentence:</span> تختم الفقرة وتعيد صياغة الفكرة الرئيسية أو تلخص النقاط بكلمة ختامية (<span class="en-term">In conclusion, To sum up</span>).</li>
+            </ul>
+
+            <h3>Unit 4: Logical Division of Ideas (التقسيم المنطقي للأفكار)</h3>
+            <ul>
+                <li><span class="en-term">Unity (الوحدة):</span> تعني أن كل جملة في الفقرة تدعم الفكرة الرئيسية وتخدمها دون خروج عن الموضوع.</li>
+                <li><span class="en-term">Coherence (الترابط والتسلسل المنطقي):</span> تدفق الأفكار بسلاسة باستخدام إشارات الانتقال (<span class="en-term">Transition Signals</span>) واستخدام الأسماء والضمائر بانسجام وثبات دون تغيير مفاجئ.</li>
+                <li><span class="en-term">Run-ons & Comma Splices:</span> أخطاء ربط الجمل. الـ Run-on بربط جملتين بدون فاصلة أو أداة، والـ Comma Splice بربطهما بفاصلة فقط. تعالج بنقطة، أو فاصلة + FANBOYS، أو أداة ربط.</li>
+            </ul>
+
+            <h3>Unit 5: Process Paragraphs (فقرات العمليات / الخطوات)</h3>
+            <ul>
+                <li>تشرح طريقة إنجاز أمر معين عبر تقسيم الخطوات إلى تسلسل زمني دقيق.</li>
+                <li><span class="en-term">Complex Sentences (الجمل المعقدة):</span> تتكون من جملة مستقلة (<span class="en-term">Independent clause</span>) وجملة غير مستقلة/تابعة (<span class="en-term">Dependent clause</span>) تبدأ بأداة ربط تابعية مثل: <span class="en-term">because, if, when, although, since, so that</span>.</li>
+                <li>قاعدة الفاصلة في الجمل المعقدة: إذا بدأت الجملة التابعة أولاً، نفصلها عن الجملة الرئيسية بفاصلة.</li>
+            </ul>
+        </div>
+
+        <div id="quiz" class="section-content">
+            <h2>اختبار تقييمي تفاعلي للمادة</h2>
+            <form id="quizForm">
+                <div class="question-card" id="q1">
+                    <p><strong>1. What are the two main parts of a good topic sentence?</strong></p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> أ) A title and a conclusion</label>
+                        <label><input type="radio" name="q1" value="b"> ب) A topic and a controlling idea</label>
+                        <label><input type="radio" name="q1" value="c"> ج) Two verbs and a subject</label>
+                    </div>
+                    <div class="explanation" id="exp1">الشرح: جملة الموضوع تتألف دائماً من الموضوع الأساسي (<span class="en-term">Topic</span>) والفكرة المسيطرة (<span class="en-term">Controlling Idea</span>).</div>
+                </div>
+
+                <div class="question-card" id="q2">
+                    <p><strong>2. What is a "Comma Splice" error?</strong></p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> أ) Joining two simple sentences with a comma alone without a coordinating conjunction.</label>
+                        <label><input type="radio" name="q2" value="b"> ب) Forgetting to put a period at the end of a paragraph.</label>
+                        <label><input type="radio" name="q2" value="c"> ج) Using a semicolon instead of a comma.</label>
+                    </div>
+                    <div class="explanation" id="exp2">الشرح: خطأ الـ Comma Splice يحدث عندما نربط جملتين مستقلتين بفاصلة فقط دون أداة ربط (<span class="en-term">FANBOYS</span>).</div>
+                </div>
+
+                <div class="question-card" id="q3">
+                    <p><strong>3. Which of the following is a coordinating conjunction used in compound sentences (FANBOYS)?</strong></p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> أ) Because</label>
+                        <label><input type="radio" name="q3" value="b"> ب) Although</label>
+                        <label><input type="radio" name="q3" value="c"> ج) So</label>
+                    </div>
+                    <div class="explanation" id="exp3">الشرح: حرف الـ (<span class="en-term">S</span>) في اختصار <span class="en-term">FANBOYS</span> يرمز لأداة الربط <span class="en-term">So</span>.</div>
+                </div>
+
+                <div class="question-card" id="q4">
+                    <p><strong>4. When a dependent clause comes at the beginning of a complex sentence, how should it be punctuated?</strong></p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> أ) Followed by a comma</label>
+                        <label><input type="radio" name="q4" value="b"> ب) Followed by a period</label>
+                        <label><input type="radio" name="q4" value="c"> ج) No punctuation needed</label>
+                    </div>
+                    <div class="explanation" id="exp4">الشرح: إذا بدأت الجملة المعقدة بالجزئية التابعة (<span class="en-term">Dependent clause</span>)، يجب فصلها عن الجملة الرئيسية بفاصلة (<span class="en-term">comma</span>).</div>
+                </div>
+
+                <button type="button" class="submit-btn" onclick="checkQuiz()">إظهار النتيجة والشرح</button>
+                <div class="result-box" id="resultBox"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.section-content').forEach(content => content.classList.remove('active'));
+            
+            if(tabId === 'study') {
+                document.querySelector('.tab-btn:nth-child(1)').classList.add('active');
+                document.getElementById('study').classList.add('active');
+            } else {
+                document.querySelector('.tab-btn:nth-child(2)').classList.add('active');
+                document.getElementById('quiz').classList.add('active');
+            }
+        }
+
+        function checkQuiz() {
+            const answers = { q1: 'b', q2: 'a', q3: 'c', q4: 'a' };
+            let score = 0;
+            let total = Object.keys(answers).length;
+
+            for (let q in answers) {
+                let selected = document.querySelector(`input[name="${q}"]:checked`);
+                let exp = document.getElementById('exp' + q.slice(1));
+                exp.style.display = 'block';
+
+                if (selected && selected.value === answers[q]) {
+                    score++;
+                    selected.parentElement.style.color = '#059669';
+                    selected.parentElement.style.fontWeight = 'bold';
+                } else if (selected) {
+                    selected.parentElement.style.color = '#dc2626';
+                }
+            }
+
+            let resultBox = document.getElementById('resultBox');
+            resultBox.style.display = 'block';
+            resultBox.style.background = score === total ? '#d1fae5' : '#fee2e2';
+            resultBox.style.color = score === total ? '#065f46' : '#991b1b';
+            resultBox.innerHTML = `نتيجتك هي: ${score} من ${total} (${Math.round((score/total)*100)}%)`;
+        }
+    </script>
+</body>
+</html>
